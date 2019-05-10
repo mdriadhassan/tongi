@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Tongi</title>
+	 <meta charset="UTF-8"/>
+	 <meta name="viewport" width="device-width, initial-scale=1, shrink-to-fit=no" />
+	 <link rel="stylesheet" href="" type="text/css"/>
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	 <style>
+	 body{
+	 	background-color: #ffffff;
+	 	margin:0;
+	 	font-size: 1.5em;
+  	 }
+  	.container{
+  		display: block;
+  		padding: 10px;
+  		border-bottom: 1px solid grey;
+  		
+  	}
+	.sidenav{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 100%;
+		background-color: #111;
+		transition: 1s;
+		z-index: 1;
+		overflow-x: hidden;
+		padding-top: 60px;
+	}
+	.sidenav a{
+		color: #818181;
+		display: block;
+		padding: 8px 8px 8px 32px;
+		font-size: 25px;
+		text-decoration: none;
+	}
+	.sidenav a:hover{
+		color: #555;
+		transition: 0.3s;
+		background-color: #abc;
+	}
+	.sidenav .closebtn{
+		position: absolute;
+		top:0;
+		right: 20px;
+		margin-left: 50px;
+		transition: 0.3s;
+	}
+	.closebtn{
+		font-size: 45px;
+		color: red;
+	}
+	.close{
+		color: blue;
+		padding: 12px 12px;
+	}
+	.openbtn{
+		word-spacing: 0px;
+	}
+	a{
+		text-decoration: none;
+		color: #f37253;
+	}
+	span{
+		cursor: pointer;
+	}
+	.fa-search{
+		position: absolute;
+		padding: 10px;
+		padding-top: 15px;
+		padding-right: 15px;
+		top: 0px;
+		right: 0px;
+	}
+	 </style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidenav" id="mynav">
+				<nav>
+						<span href="javascript:void(0)" onClick="closeNav()" class="closebtn">&times;</span>
+						<a href="">About</a>
+						<a href="">Services</a>
+						<a href="">Products</a>
+						<a href="">Client</a>
+						<a href="">Contact</a></span>
+				</nav>
+				<span class="close" onClick="closeNav()">Close</span>
+		</div>
+		<span onclick="openNav()" class= "openbtn">&nbsp;&#9776;&nbsp;</span>
+		<i class = "fa fa-"></i>
+		<span><a href="">&nbsp;Tongi</a></span>
+		<i class = "fa fa-search"></i>
+	</div>
+	<div>
+		
+	
+	</div>
+<script>
+function openNav(){
+document.getElementById("mynav").style.width="200px";}
+function closeNav(){
+document.getElementById("mynav").style.width="0";}
+</script>
+	 </body>
+ </html>
